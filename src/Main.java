@@ -1,3 +1,5 @@
+import Model.Aluno;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -28,12 +30,26 @@ public class Main {
         System.out.println(student1.name + " tem média: " + student1.calculaMedia());
         System.out.println(student2.name + " tem média: " + student2.calculaMedia());
 
-        Bond bond= new Bond();
-        bond.name="tesouro";
-        bond.balance=100000.45;
+        Bond bond = new Bond();
+        bond.name = "tesouro";
+        bond.balance = 100000.45;
 
         bond.buyBond(60);
         bond.simulateInterest();
+
+
+        System.out.println();
+
+
+        Aluno aluno = new Aluno();
+        aluno.nome = "Paulo";
+        aluno.altura = 1.70;
+        aluno.anoMatricula = 2024;
+
+
+        System.out.println(aluno.nome + " tem " + aluno.altura + "m de altura");
+
+        aluno.estudar();
 
 
     }
