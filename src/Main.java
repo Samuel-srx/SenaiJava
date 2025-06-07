@@ -15,11 +15,6 @@ public class Main {
         produtos.venderProduto(37);
 
 
-
-
-
-
-
         Student student1 = new Student();
         student1.name = "Bob";
         student1.grade1 = 7.0;
@@ -33,6 +28,12 @@ public class Main {
         System.out.println(student1.name + " tem média: " + student1.calculaMedia());
         System.out.println(student2.name + " tem média: " + student2.calculaMedia());
 
+        Bond bond= new Bond();
+        bond.name="tesouro";
+        bond.balance=100000.45;
+
+        bond.buyBond(60);
+        bond.simulateInterest();
 
 
     }
